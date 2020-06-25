@@ -1,0 +1,29 @@
+#MAIN OPTIONS (running args)
+
+experiment-name: predict-nuqe
+
+output-dir: /home/snchen/project/openkiwi-auto/runs/predictions-nuqe/target
+
+#
+# GENERAL OPTIONS
+#
+# random
+seed: 42
+
+# gpu
+gpu-id: -1
+
+model: nuqe
+
+# save and load
+load-model: /home/snchen/project/openkiwi-auto/runs/nuqe/target/best_model.torch
+
+#
+# DATA OPTIONS
+#
+wmt18-format: false
+test-source: /home/snchen/data/wmt2017/word_level/en_de/test/test.src
+test-target: /home/snchen/data/wmt2017/word_level/en_de/test/test.mt
+test-alignments: /home/snchen/data/wmt2017/word_level/en_de/test/test.align
+valid-batch-size: 64
+

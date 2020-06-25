@@ -1,0 +1,27 @@
+#MAIN OPTIONS (running args)
+
+experiment-name: predict-predest
+
+output-dir: F:/openkiwi/runs/predictions-estimator/target
+
+#
+# GENERAL OPTIONS
+#
+# random
+seed: 42
+
+# gpu
+gpu-id: -1
+
+model: estimator
+
+# save and load
+load-model: F:/openkiwi/runs/estimator/target/best_model.torch
+
+#
+# DATA OPTIONS
+#
+wmt18-format: False
+test-source: F:/data/wmt2017/word_level/en_de/test/test.src
+test-target: F:/data/wmt2017/word_level/en_de/test/test.mt
+valid-batch-size: 64
